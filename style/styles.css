@@ -1,0 +1,43 @@
+h2 {
+    text-align: center;
+}
+
+#langflag {
+    width:30px;
+}
+
+#divchoicebox {
+    margin: auto;
+    width: 50%;
+    padding-left: 12%;
+    /* padding-right: 12%; */
+    align-content: center;
+}
+
+footer {
+    font-size: 11px;
+    position: relative;
+}
+
+#signupform p {
+    padding: 10px;
+}
+
+#signupform h2 {
+    margin-top: 45px;
+}
+
+#signupform button {
+    margin: 45px;
+}
+
+.parallax1{
+    background-image:url("../images/Collegestudent.jpg");
+    min-height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom:0;
+}
+
+

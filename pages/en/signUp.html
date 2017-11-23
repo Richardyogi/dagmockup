@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScholarshipsTips.com | Sign Up</title>
+    <link rel="stylesheet" href="../../style/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../style/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/w3.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="w3-bar w3-light-blue" style="padding-left:10px; padding-right:10px">
+        <a href="">
+            <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
+        </a>
+        <div style="padding-top: 3px">
+            <a href="" class="w3-bar-item w3-button w3-right">
+                <i class="fa fa-user-o"></i> Login</a>
+            <div class="w3-dropdown-hover w3-right">
+                <button class="w3-button">
+                    <img src="../../images/flags/en.png" id="langflag"> EN</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ru.png" id="langflag"> RU</a>
+                    <a href="#" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/jp.png" id="langflag"> JP</a>
+                    <a href="#" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ch.png" id="langflag"> CH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--sign up form-->
+    <div>
+        <form class="w3-container" style="margin: auto; width:30%;" id="signupform">
+            <h2>Sign Up</h2>
+
+            <p>
+                <label>Username</label>
+                <input class="w3-input w3-border w3-round-large" name="username" type="text">
+            </p>
+            <p>
+                <label>Password</label>
+                <input class="w3-input w3-border w3-round-large" name="pw" type="password">
+                <label>Case sensitive. Must be 8-16 characters.</label>
+            </p>
+            <p>
+                <label>Confirm Password</label>
+                <input class="w3-input w3-border w3-round-large" name="pw" type="password">
+            </p>
+            <p>
+                <label>E-Mail</label>
+                <input class="w3-input w3-border w3-round-large" name="email" type="email">
+            </p>
+            <p>
+                <label>Country preference</label>
+                <select class="w3-select w3-border w3-round-large" name="option">
+                    <option value="" disabled selected id=chooser>Choose country</option>
+                    <option value="1">Germany</option>
+                    <option value="2">United States</option>
+                    <option value="3">Netherlands</option>
+                    <option value="4">Japan</option>
+                    <option value="5">Singapore</option>
+                </select>
+            </p>
+            <p>
+                <label>Degree preference</label>
+                <select class="w3-select w3-border w3-round-large" name="option">
+                    <option value="" disabled selected id=chooser>Choose degree</option>
+                    <option value="1">Bachelor</option>
+                    <option value="2">Master</option>
+                    <option value="3">Doctorate</option>
+                </select>
+            </p>
+            <div class="w3-center">
+                <input class="w3-check" type="checkbox">
+                <label>I Agree to the
+                    <a href="">Terms of Use</a> and
+                    <a href="">Privacy Policy</a>
+                </label>
+                <button type="submit">Register Now</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <!--footer-->
+    <footer class="w3-container w3-light-blue w3-cell-row">
+
+        <div class="w3-container" style="margin: auto; width:50%;">
+            <!--copyright info-->
+            <div class="w3-container w3-cell" id="footercell">
+                <ul style="list-style-type:none">
+                    <li>ScholarshipsTips</li>
+                    <li>&copy; ScholarshipsTips 2017</li>
+                    <li>All Rights Reserved</li>
+                    <li>www.scholarshipstips.com</li>
+                </ul>
+            </div>
+            <!--page links-->
+            <div class="w3-container w3-cell" id="footercell">
+                <ul style="list-style-type:none">
+                    <li>
+                        <a href="#" class="">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Terms Of Use</a>
+                    </li>
+                </ul>
+            </div>
+            <!--footer social media-->
+            <div class="w3-container w3-cell" id="footercell">
+                <p>Find us on social medias!</p>
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-google-plus w3-hover-opacity"></i>
+                <i class="fa fa-youtube w3-hover-opacity"></i>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
