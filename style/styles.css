@@ -31,6 +31,10 @@ footer {
     margin: 45px;
 }
 
+#minihead {
+    font-size: 12px;
+}
+
 .parallax1{
     background-image:url("../images/Collegestudent.jpg");
     min-height:500px;
