@@ -19,15 +19,15 @@
         </a>
         <div style="padding-top: 3px">
             <a href="" class="w3-bar-item w3-button w3-right">
-                <i class="fa fa-user-o"></i> Login</a>
+                <i class="fa fa-user-o"></i> ログイン</a>
             <div class="w3-dropdown-hover w3-right">
                 <button class="w3-button">
-                    <img src="../../images/flags/en.png" id="langflag"> EN</button>
+                    <img src="../../images/flags/jp.png" id="langflag"> JP</button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
                     <a href="#" class="w3-bar-item w3-button">
                         <img src="../../images/flags/ru.png" id="langflag"> RU</a>
                     <a href="#" class="w3-bar-item w3-button">
-                        <img src="../../images/flags/jp.png" id="langflag"> JP</a>
+                        <img src="../../images/flags/en.png" id="langflag"> EN</a>
                     <a href="#" class="w3-bar-item w3-button">
                         <img src="../../images/flags/ch.png" id="langflag"> CH</a>
                 </div>
@@ -36,48 +36,47 @@
     </div>
 
     <!--content-->
-    <!--content-->
     <div id="profilecontainer" style="margin-top:30px;">
         <div class="w3-container w3-light-grey  w3-round-xlarge" style="margin: auto; width:50%; margin-bottom: 30px;">
             <div style="margin:10px;"></div>
-            <h2>Edit Profile</h2>
+            <h2>プロファイル編集</h2>
             <div class="w3-container w3-center" style="margin:auto; width:50%;">
                 <img src="../../images/default-user-image.png" class="w3-circle" style="width:150px;" alt="userimage">
             </div>
             <div class="w3-container" id='tablecontainer'>
                 <table>
                     <tr>
-                        <td>Your name: </td>
+                        <td>尊名: </td>
                         <td></td>
                         <td>
                             <input class="w3-input w3-border w3-round-large" name="name" type="text">
                         </td>
                     </tr>
                     <tr>
-                        <td>E-Mail: </td>
+                        <td>電子メイル: </td>
                         <td></td>
                         <td>
                             <input class="w3-input w3-border w3-round-large" name="email" type="email">
                         </td>
                     </tr>
                     <tr>
-                        <td>Degree preference: </td>
+                        <td>度の好み: </td>
                         <td></td>
                         <td>
                             <select class="w3-select w3-border w3-round-large" name="option">
-                                <option value="" disabled selected id=chooser>Choose degree</option>
-                                <option value="1">Bachelor</option>
-                                <option value="2">Master</option>
-                                <option value="3">Doctorate</option>
+                                <option value="" disabled selected id=chooser>度を選択</option>
+                                <option value="1">バチェラー</option>
+                                <option value="2">マスター</option>
+                                <option value="3">博士</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
-                        <td>Country preference: </td>
+                        <td>国の好み: </td>
                         <td></td>
                         <td>
                             <select class="w3-select w3-border w3-round-large" name="option">
-                                <option value="" disabled selected id=chooser>Choose country</option>
+                                <option value="" disabled selected id=chooser>国を選択します</option>
                                 <option value="1">Germany</option>
                                 <option value="2">United States</option>
                                 <option value="3">Netherlands</option>
@@ -96,14 +95,14 @@
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td>Password: </td>
+                        <td>パスワード: </td>
                         <td></td>
                         <td>
                             <input class="w3-input w3-border w3-round-large" name="password" type="password">
                         </td>
                     </tr>
                     <tr>
-                        <td>Confirm password: </td>
+                        <td>パスワードを認証する: </td>
                         <td></td>
                         <td>
                             <input class="w3-input w3-border w3-round-large" name="password" type="password">
@@ -113,7 +112,8 @@
                         <td></td>
                         <td></td>
                         <td>
-                            <input type="submit" class="w3-button w3-border w3-round-large" style="float:right; margin-top:15px;">
+                            <button class="w3-button w3-border w3-round-large" style="float:right; margin-top: 15px;">溜る</button>
+                            <!-- <input type="submit" class="w3-button w3-border w3-round-large" style="float:right; margin-top:15px;"> -->
                         </td>
                     </tr>
                 </table>
