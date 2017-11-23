@@ -35,6 +35,36 @@ footer {
     font-size: 12px;
 }
 
+#preferencehead {
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#duedatediv {
+    margin-top: 75px;
+    margin-bottom: 15px;
+}
+
+#duedate {
+    color: red;
+}
+
+#userinfo {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+#linkdiv {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+span {
+    text-decoration-color: black;
+}
+
 .parallax1{
     background-image:url("../images/Collegestudent.jpg");
     min-height:500px;
