@@ -17,7 +17,7 @@
                  <img src="images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
                 </a>
         <div style="padding-top: 3px">
-            <button  class="w3-bar-item w3-right w3-button " onclick="document.getElementById('id01').style.display='block'">
+            <button class="w3-bar-item w3-right w3-button " onclick="document.getElementById('id01').style.display='block'">
                         <i class="fa fa-user-o"></i> Login </button>
             <div class="w3-dropdown-hover w3-right">
                 <button class="w3-button">
@@ -263,7 +263,7 @@
 
     <footer class="w3-container w3-light-grey w3-cell-row">
 
-        <div class="w3-container" >
+        <div class="w3-container">
             <!--copyright info-->
             <div class="w3-cell " id="footercell" style="float:left">
                 <ul style="list-style-type:none">
@@ -273,10 +273,10 @@
                     <li>www.scholarshipstips.com</li>
                 </ul>
             </div>
-            
-            
+
+
             <!--footer social media-->
-            <div class=" w3-cell" id="footercell" style="float:right;margin-right:15%" >
+            <div class=" w3-cell" id="footercell" style="float:right;margin-right:15%">
                 <p>Find us on social medias!</p>
                 <i class="fa fa-facebook-official w3-hover-opacity"></i>
                 <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -286,7 +286,7 @@
             </div>
 
             <!--page links-->
-            <div class="w3-cell" id="footercell" style="float:right;margin-right:20%" >
+            <div class="w3-cell" id="footercell" style="float:right;margin-right:20%">
                 <ul style="list-style-type:none">
                     <li>
                         <a href="#" class="">Home</a>
@@ -311,27 +311,23 @@
 
     <div id="id01" class="modal">
 
-        <form class="modal-content" method='post' action="#">
-            <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                <center>
-                    <h1>Login</h1>
-                </center>
-            </div>
+        <form class="modal-content animate" action="/action_page.php">
 
             <div class="container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <label><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
 
                 <label><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
-                <input type="checkbox" checked="checked"> Remember me <br>
-                <a href="pages/en/userProfilePage.html" class="w3-button w3-border w3-gray"> Sign In </a>
-                <span class="psw">Forgot <a href="#">password?</a></span>
+
+                <a class="w3-button w3-border" href="pages/en/userProfilePage.html"> Sign In </a> <br>
+                <input type="checkbox" checked="checked"> Remember me
             </div>
 
             <div class="container" style="background-color:#f1f1f1">
-
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
         </form>
     </div>
