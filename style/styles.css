@@ -198,12 +198,9 @@ span.psw {
 .close:focus {
     color: red;
     cursor: pointer;
-<<<<<<< HEAD
+
     
 }
-=======
-}
-=======
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -227,9 +224,6 @@ span.psw {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
->>>>>>> d6558acb1ea6feceb748f285a14f8f893eb09058
-
->>>>>>> 0ede8fec920eedbda0671a3457c522ff43c84bf7
 
 .signup{
     background-image:url("../images/college-student.jpg");

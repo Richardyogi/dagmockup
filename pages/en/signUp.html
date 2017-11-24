@@ -14,22 +14,22 @@
 <body class="signup">
     <!--navbar-->
     <div class="w3-bar w3-light-gray" style="padding-left:10px; padding-right:10px">
-        <a href="../../index.html">
-                             <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
-                            </a>
+        <a href="index.html">
+            <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
+        </a>
         <div style="padding-top: 3px">
             <button class="w3-bar-item w3-right w3-button " onclick="document.getElementById('id01').style.display='block'">
-                            <i class="fa fa-user-o"></i> Login </button>
+                <i class="fa fa-user-o"></i> Login </button>
             <div class="w3-dropdown-hover w3-right">
                 <button class="w3-button">
-                                        <img src="../../images/flags/en.png" id="langflag"> EN</button>
+                    <img src="../../images/flags/en.png" id="langflag"> EN</button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
                     <a href="#" class="w3-bar-item w3-button">
-                                            <img src="../../images/flags/ru.png" id="langflag"> RU</a>
+                        <img src="../../images/flags/ru.png" id="langflag"> RU</a>
+                    <a href="../jp/signUp.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/jp.png" id="langflag"> JP</a>
                     <a href="#" class="w3-bar-item w3-button">
-                                            <img src="../../images/flags/jp.png" id="langflag"> JP</a>
-                    <a href="#" class="w3-bar-item w3-button">
-                                            <img src="../../images/flags/ch.png" id="langflag"> CH</a>
+                        <img src="../../images/flags/ch.png" id="langflag"> CH</a>
                 </div>
             </div>
         </div>
@@ -156,14 +156,21 @@
             </div>
 
             <div class="container">
-                <label><b>Username</b></label>
+                <label>
+                    <b>Username</b>
+                </label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
 
-                <label><b>Password</b></label>
+                <label>
+                    <b>Password</b>
+                </label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
-                <input type="checkbox" checked="checked"> Remember me <br>
+                <input type="checkbox" checked="checked"> Remember me
+                <br>
                 <button type="submit">Login</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
+                <span class="psw">Forgot
+                    <a href="#">password?</a>
+                </span>
             </div>
 
             <div class="container" style="background-color:#f1f1f1">
