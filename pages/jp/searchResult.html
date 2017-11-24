@@ -26,7 +26,7 @@
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
                     <a href="#" class="w3-bar-item w3-button">
                         <img src="../../images/flags/ru.png" id="langflag"> RU</a>
-                    <a href="#" class="w3-bar-item w3-button">
+                    <a href="../en/seaarchResult.html" class="w3-bar-item w3-button">
                         <img src="../../images/flags/en.png" id="langflag"> EN</a>
                     <a href="#" class="w3-bar-item w3-button">
                         <img src="../../images/flags/ch.png" id="langflag"> CH</a>
@@ -241,36 +241,45 @@
 
         </footer>
 
+        <!--modal login jap-->
         <div id="id01" class="modal">
-
-            <form class="modal-content" method='post' action="#">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                    <center>
-                        <h1>Login</h1>
-                    </center>
-                </div>
-
+            <form class="modal-content animate" action="/action_page.php">
                 <div class="container">
-                    <label>
-                        <b>Username</b>
-                    </label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-right">&times;</span>
 
-                    <label>
-                        <b>Password</b>
-                    </label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                    <input type="checkbox" checked="checked"> Remember me
-                    <br>
-                    <button type="submit">Login</button>
-                    <span class="psw">Forgot
-                        <a href="#">password?</a>
-                    </span>
-                </div>
+                    <form class="modal-content" method='post' action="#">
+                        <div class="imgcontainer">
 
-                <div class="container" style="background-color:#f1f1f1">
+                            <center>
+                                <h1>ログイン</h1>
+                            </center>
+                        </div>
 
+                        <div class="container">
+
+                            <label>
+                                <b>ユーザー名</b>
+                            </label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label>
+                                <b>パスワード</b>
+                            </label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <br>
+                            <input type="checkbox" checked="checked"> 私を覚えてますか
+                            <br>
+                            <br>
+                            <a href="#">パスワードをお忘れですか？</a>
+                            <br>
+                            <br>
+                            <span class="psw">
+
+                            </span>
+                            <a class="w3-button w3-border" href="userProfilePage.html"> ログイン </a>
+                        </div>
+                    </form>
                 </div>
             </form>
         </div>
