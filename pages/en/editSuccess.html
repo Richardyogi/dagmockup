@@ -14,7 +14,7 @@
 <body>
     <!--navbar-->
     <div class="w3-bar w3-light-gray" style="padding-left:10px; padding-right:10px">
-        <a href="index.html">
+        <a href="../../index.html">
             <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
         </a>
         <div style="padding-top: 3px">
@@ -22,7 +22,9 @@
                 <button class="w3-button w3-transparent">
                     <i class="fa fa-user-o"></i> Mimi </button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-center" style="width:15%">
-                    <img src="../../images/default-user-image.png" class="w3-circle" style="width:110px;" alt="userimage">
+                    <a href="userProfilePage.html">
+                        <img src="../../images/default-user-image.png" class="w3-circle" style="width:110px;" alt="userimage">
+                    </a>
                     <p>MIMI AISHERA VEALIS</p>
                     <p>mimishera@gmail.com</p>
                     <span style="font-size:10px">
@@ -42,11 +44,11 @@
                 <button class="w3-button">
                     <img src="../../images/flags/en.png" id="langflag"> EN</button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="#" class="w3-bar-item w3-button">
+                    <a href="../ru/editProfilePage.html" class="w3-bar-item w3-button">
                         <img src="../../images/flags/ru.png" id="langflag"> RU</a>
                     <a href="../jp/editProfilePage.html" class="w3-bar-item w3-button">
                         <img src="../../images/flags/jp.png" id="langflag"> JP</a>
-                    <a href="#" class="w3-bar-item w3-button">
+                    <a href="../ch/editProfilePage.html" class="w3-bar-item w3-button">
                         <img src="../../images/flags/ch.png" id="langflag"> CH</a>
                 </div>
             </div>
@@ -54,13 +56,15 @@
     </div>
 
     <!--content-->
-    <!--content-->
     <div id="profilecontainer" style="margin-top:30px;">
         <div class="w3-container w3-light-grey  w3-round-xlarge" style="margin: auto; width:50%; margin-bottom: 30px;">
             <div style="margin:10px;"></div>
             <h2>Edit Profile</h2>
             <div class="w3-container w3-center" style="margin:auto; width:50%;">
                 <img src="../../images/default-user-image.png" class="w3-circle" style="width:150px;" alt="userimage">
+            </div>
+            <div class="w3-container w3-center" style="margin-top:30px; color: red">
+                <b>You have successfully edit your information</b>
             </div>
             <div class="w3-container" id='tablecontainer'>
                 <table>
@@ -131,7 +135,9 @@
                         <td></td>
                         <td></td>
                         <td>
-                            <input type="submit" class="w3-button w3-border w3-round-large" style="float:right; margin-top:15px;">
+                            <a href="editSuccess.html">
+                                <input type="submit" class="w3-button w3-border w3-round-large" style="float:right; margin-top:15px;">
+                            </a>
                         </td>
                     </tr>
                 </table>
