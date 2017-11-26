@@ -273,15 +273,15 @@
             <br>
             <div class="w3-container w3-center" style="margin:auto; width:80%">
                 <h1>About Us</h1>
-                <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae itaque, reprehenderit unde quas molestias
-                nostrum a laborum eos officia fugiat ad inventore sint ratione. Temporibus veniam debitis itaque tenetur
-                id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptatem reprehenderit omnis temporibus
-                quia ipsum minus odio iusto error dolores id hic molestias sequi sunt repellendus, neque odit nulla adipisci?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente in quasi accusamus alias assumenda, eaque,
-                sit praesentium iure expedita aut aperiam voluptate dolorem magnam illum odio officia fugiat veniam accusantium.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reiciendis expedita vitae quae sint, nobis
-                repellendus temporibus? Perspiciatis dolore assumenda tempora recusandae perferendis ad? Cumque hic dolorum
-                natus accusamus a.
+                <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae itaque, reprehenderit unde quas
+                molestias nostrum a laborum eos officia fugiat ad inventore sint ratione. Temporibus veniam debitis itaque
+                tenetur id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptatem reprehenderit omnis
+                temporibus quia ipsum minus odio iusto error dolores id hic molestias sequi sunt repellendus, neque odit
+                nulla adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente in quasi accusamus alias
+                assumenda, eaque, sit praesentium iure expedita aut aperiam voluptate dolorem magnam illum odio officia fugiat
+                veniam accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reiciendis expedita
+                vitae quae sint, nobis repellendus temporibus? Perspiciatis dolore assumenda tempora recusandae perferendis
+                ad? Cumque hic dolorum natus accusamus a.
             </div>
         </div>
 
@@ -293,15 +293,15 @@
             <br>
             <div class="w3-container w3-center" style="margin:auto; width:80%">
                 <h1>Contact Us</h1>
-                <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae itaque, reprehenderit unde quas molestias
-                nostrum a laborum eos officia fugiat ad inventore sint ratione. Temporibus veniam debitis itaque tenetur
-                id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptatem reprehenderit omnis temporibus
-                quia ipsum minus odio iusto error dolores id hic molestias sequi sunt repellendus, neque odit nulla adipisci?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente in quasi accusamus alias assumenda, eaque,
-                sit praesentium iure expedita aut aperiam voluptate dolorem magnam illum odio officia fugiat veniam accusantium.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reiciendis expedita vitae quae sint, nobis
-                repellendus temporibus? Perspiciatis dolore assumenda tempora recusandae perferendis ad? Cumque hic dolorum
-                natus accusamus a.
+                <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae itaque, reprehenderit unde quas
+                molestias nostrum a laborum eos officia fugiat ad inventore sint ratione. Temporibus veniam debitis itaque
+                tenetur id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptatem reprehenderit omnis
+                temporibus quia ipsum minus odio iusto error dolores id hic molestias sequi sunt repellendus, neque odit
+                nulla adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente in quasi accusamus alias
+                assumenda, eaque, sit praesentium iure expedita aut aperiam voluptate dolorem magnam illum odio officia fugiat
+                veniam accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reiciendis expedita
+                vitae quae sint, nobis repellendus temporibus? Perspiciatis dolore assumenda tempora recusandae perferendis
+                ad? Cumque hic dolorum natus accusamus a.
             </div>
         </div>
     </div>
@@ -358,35 +358,43 @@
     </footer>
 
     <div id="id01" class="modal">
-
-        <form class="modal-content" method='post' action="#">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                <center>
-                    <h1>Login</h1>
-                </center>
-            </div>
-
+        <form class="modal-content animate" action="/action_page.php">
             <div class="container">
-                <label>
-                    <b>Username</b>
-                </label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-right">&times;</span>
 
-                <label>
-                    <b>Password</b>
-                </label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                <input type="checkbox" checked="checked"> Remember me
-                <br>
-                <a href="pages/en/userProfilePage.html" class="w3-button w3-border w3-gray"> Sign In </a>
-                <span class="psw">
-                    <a href="pages/en/forgotPassword.html">Forgot password?</a>
-                </span>
-            </div>
+                <form class="modal-content" method='post' action="#">
+                    <div class="imgcontainer">
 
-            <div class="container" style="background-color:#f1f1f1">
+                        <center>
+                            <h1>Авторизоваться</h1>
+                        </center>
+                    </div>
 
+                    <div class="container">
+
+                        <label>
+                            <b>имя пользователя</b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label>
+                            <b>пароль</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <br>
+                        <input type="checkbox" checked="checked"> Запомни меня
+                        <br>
+                        <br>
+                        <a href="forgotPassword.html">Забыли пароль？</a>
+                        <br>
+                        <br>
+                        <span class="psw">
+
+                        </span>
+                        <a class="w3-button w3-border" href="userProfilePage.html"> войти в систему </a>
+                    </div>
+                </form>
             </div>
         </form>
     </div>
