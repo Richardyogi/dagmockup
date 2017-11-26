@@ -238,3 +238,8 @@ span.psw {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.loginsuccess{
+    min-height:500px;
+    background-image: url("../images/thought-catalog-214785.jpg")
+}
