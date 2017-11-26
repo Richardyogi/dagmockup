@@ -19,31 +19,33 @@
         </a>
         <div style="padding-top: 3px">
             <button class="w3-bar-item w3-right w3-button " onclick="document.getElementById('id01').style.display='block'">
-                <i class="fa fa-user-o"></i> ログイン </button>
+                <i class="fa fa-user-o"></i> Login </button>
+            <!--langdrop ch-->
             <div class="w3-dropdown-hover w3-right">
                 <button class="w3-button">
-                    <img src="../../images/flags/jp.png" id="langflag"> JP</button>
+                    <img src="../../images/flags/ch.png" id="langflag"> CH</a>
+                </button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="../ru/searchResult2.html" class="w3-bar-item w3-button">
+                    <a href="../ru/index.html" class="w3-bar-item w3-button">
                         <img src="../../images/flags/ru.png" id="langflag"> RU</a>
-                    <a href="../en/searchResult2.html" class="w3-bar-item w3-button">
+                    <a href="../jp/index.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/jp.png" id="langflag"> JP</a>
+                    <a href="../../index.html" class="w3-bar-item w3-button">
                         <img src="../../images/flags/en.png" id="langflag"> EN</a>
-                    <a href="../ch/searchResult2.html" class="w3-bar-item w3-button">
-                        <img src="../../images/flags/ch.png" id="langflag"> CH</a>
                 </div>
             </div>
+            <!---->
         </div>
     </div>
 
-
     <!--choice box-->
     <div class="w3-container w3-center" style="margin-top: 10px">
-        <h2>あなたの結果はここにあります!</h2>
+        <h2>这是你的结果！</h2>
         <div class="w3-container w3-cell-row" style="margin: auto; width:50%; margin-top:35px;">
             <div class="w3-container w3-cell">
                 <select class="w3-select w3-border" name="option">
-                    <option value="0" disabled selected id=chooser>国を選択します</option>
-                    <option value="">Germany</option>
+                    <option value="0" disabled>选择国家</option>
+                    <option value="" selected>Germany</option>
                     <option value="2">United States</option>
                     <option value="3">Netherlands</option>
                     <option value="4">Japan</option>
@@ -52,10 +54,10 @@
             </div>
             <div class="w3-container w3-cell">
                 <select class="w3-select w3-border" name="option">
-                    <option value="0" disabled selected id=chooser>度を選択</option>
-                    <option value="">バチェラー</option>
-                    <option value="2">マスター</option>
-                    <option value="3">博士</option>
+                    <option value="0" disabled selected>选择学位</option>
+                    <option value="" selected>Bachelor</option>
+                    <option value="2">Master</option>
+                    <option value="3">Doctorate</option>
                 </select>
             </div>
             <div class="w3-container" style="padding:0;">
@@ -68,117 +70,126 @@
 
     <!--result table-->
     <div class="w3-container w3-margin-top w3-padding-48">
-        <table class="w3-table-all w3-hoverable w3-centered" style="font-size:13px;">
+        <table class="w3-table-all w3-hoverable w3-centered" style="font-size:13px;" id="beasiswa">
             <thead>
                 <tr class="w3-light-grey">
-                    <th>奨学金の名前</th>
-                    <th>程度</th>
-                    <th>大学</th>
-                    <th>国</th>
-                    <th>期日</th>
+                    <th onclick="sortTable(0)">奖学金名称</th>
+                    <th onclick="sortTable(1)">度</th>
+                    <th onclick="sortTable(2)">大学</th>
+                    <th onclick="sortTable(3)">国家</th>
+                    <th onclick="sortTable(4)">截止日期</th>
                 </tr>
             </thead>
+            <!--1 row-->
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABA 计算机科学奖学金</a>
                 </td>
-                <td>バチェラー</td>
+                <td>单身汉</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
+            <!---->
+            <!--1 row-->
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        BCDコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABA 计算机科学奖学金</a>
                 </td>
-                <td>バチェラー</td>
-                <td>BCDA University</td>
-                <td>Germany</td>
-                <td>28-02-2018</td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
-                </td>
-                <td>バチェラー</td>
+                <td>单身汉</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
+            <!---->
+            <!--1 row-->
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABA 计算机科学奖学金</a>
                 </td>
-                <td>バチェラー</td>
+                <td>单身汉</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
+            <!---->
+            <!--1 row-->
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABA 计算机科学奖学金</a>
                 </td>
-                <td>バチェラー</td>
+                <td>单身汉</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
+            <!---->
+            <!--1 row-->
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABA 计算机科学奖学金</a>
                 </td>
-                <td>バチェラー</td>
+                <td>单身汉</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
+            <!---->
+            <!--1 row-->
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABA 计算机科学奖学金</a>
                 </td>
-                <td>バチェラー</td>
+                <td>单身汉</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
+            <!---->
+            <!--1 row-->
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABA 计算机科学奖学金</a>
                 </td>
-                <td>バチェラー</td>
+                <td>单身汉</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
+            <!---->
+            <!--1 row-->
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABA 计算机科学奖学金</a>
                 </td>
-                <td>バチェラー</td>
+                <td>单身汉</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
+            <!---->
+            <!--1 row-->
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABA 计算机科学奖学金</a>
                 </td>
-                <td>バチェラー</td>
+                <td>单身汉</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
-
+            <!---->
+            <!--1 row-->
+            <tr>
+                <td>
+                    <a href="scholarshipInfoPage.html">ABA 计算机科学奖学金</a>
+                </td>
+                <td>单身汉</td>
+                <td>German University</td>
+                <td>Germany</td>
+                <td>31-01-2018</td>
+            </tr>
+            <!---->
         </table>
     </div>
 
@@ -186,15 +197,15 @@
     <div class="w3-center w3-margin-bottom">
         <div class="w3-bar">
             <a href="#" class="w3-bar-item w3-button">&laquo;</a>
-            <a href="searchResult.html" class="w3-button">1</a>
-            <a href="#" class="w3-button w3-grey">2</a>
+            <a href="#" class="w3-button w3-grey">1</a>
+            <a href="searchResult2.html" class="w3-button">2</a>
             <a href="#" class="w3-button">3</a>
             <a href="#" class="w3-button">4</a>
             <a href="#" class="w3-button">&raquo;</a>
         </div>
     </div>
 
-    <!--footer jp-->
+    <!--footer ch-->
     <footer class="w3-container w3-light-grey w3-cell-row">
         <div class="w3-container" style="margin:auto; width:80%;">
             <!--copyright info-->
@@ -209,8 +220,8 @@
 
             <!--footer social media-->
             <div class=" w3-cell w3-container w3-right" id="footercell" style="margin-right:6%">
-                <p>ソーシャルメディアで私たちを見つけよう！</p>
-                <div class="w3-container w3-center" style="margin:auto; width:50%;">
+                <p>找到我们的社交媒体！</p>
+                <div class="w3-container w3-center" style="margin:auto; width:100%;">
                     <i class="fa fa-facebook-official w3-hover-opacity"></i>
                     <i class="fa fa-instagram w3-hover-opacity"></i>
                     <i class="fa fa-twitter w3-hover-opacity"></i>
@@ -223,21 +234,21 @@
             <div class="w3-cell w3-container w3-middle" id="footercell" style="width:50%">
 
                 <ul style="list-style-type:none">
-                    <div class="w3-container" style="padding-left:27%; padding-right:0px; margin:auto; width:60%">
+                    <div class="w3-container" style="padding-left:45%; padding-right:0px; margin:auto; width:60%">
                         <li>
-                            <a href="#" class="">ホーム</a>
+                            <a href="#" class="">家</a>
                         </li>
                         <li>
-                            <a href="#" class="">私たちに関しては</a>
+                            <a href="#" class="">关于我们</a>
                         </li>
                         <li>
-                            <a href="#" class="">お問い合わせ</a>
+                            <a href="#" class="">联系我们</a>
                         </li>
                         <li>
-                            <a href="#" class="">個人情報保護方針</a>
+                            <a href="#" class="">隐私政策</a>
                         </li>
                         <li>
-                            <a href="#" class="">利用規約</a>
+                            <a href="#" class="">使用条款</a>
                         </li>
                     </div>
                 </ul>
@@ -246,48 +257,41 @@
 
     </footer>
 
-    <!--modal login jap-->
+    <!--modal login ch-->
     <div id="id01" class="modal">
-        <form class="modal-content animate" action="/action_page.php">
+
+        <form class="modal-content" method='post' action="#">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <center>
+                    <h1>登录</h1>
+                </center>
+            </div>
+
             <div class="container">
-                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-right">&times;</span>
+                <label>
+                    <b>用户名</b>
+                </label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
 
-                <form class="modal-content" method='post' action="#">
-                    <div class="imgcontainer">
+                <label>
+                    <b>密码</b>
+                </label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="checkbox" checked="checked"> 记住我
+                <br>
+                <a href="userProfilePage.html" class="w3-button w3-border w3-gray"> 签到 </a>
+                <span class="psw">
+                    <a href="forgotPassword.html">忘记密码？</a>
+                </span>
+            </div>
 
-                        <center>
-                            <h1>ログイン</h1>
-                        </center>
-                    </div>
+            <div class="container" style="background-color:#f1f1f1">
 
-                    <div class="container">
-
-                        <label>
-                            <b>ユーザー名</b>
-                        </label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
-
-                        <label>
-                            <b>パスワード</b>
-                        </label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-
-                        <br>
-                        <input type="checkbox" checked="checked"> 私を覚えてますか
-                        <br>
-                        <br>
-                        <a href="forgotPassword.html">パスワードをお忘れですか？</a>
-                        <br>
-                        <br>
-                        <span class="psw">
-
-                        </span>
-                        <a class="w3-button w3-border" href="userProfilePage.html"> ログイン </a>
-                    </div>
-                </form>
             </div>
         </form>
     </div>
+    <!---->
 
     <script>
         function sortTable(n) {
@@ -334,6 +338,8 @@
             }
         }
     </script>
+
+
 </body>
 
 </html>
