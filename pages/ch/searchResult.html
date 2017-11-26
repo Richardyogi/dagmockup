@@ -19,15 +19,15 @@
         </a>
         <div style="padding-top: 3px">
             <button class="w3-bar-item w3-right w3-button " onclick="document.getElementById('id01').style.display='block'">
-                <i class="fa fa-user-o"></i> ログイン </button>
+                <i class="fa fa-user-o"></i> Login </button>
             <div class="w3-dropdown-hover w3-right">
                 <button class="w3-button">
-                    <img src="../../images/flags/jp.png" id="langflag"> JP</button>
+                    <img src="../../images/flags/en.png" id="langflag"> EN</button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
                     <a href="#" class="w3-bar-item w3-button">
                         <img src="../../images/flags/ru.png" id="langflag"> RU</a>
-                    <a href="../en/searchResult2.html" class="w3-bar-item w3-button">
-                        <img src="../../images/flags/en.png" id="langflag"> EN</a>
+                    <a href="../jp/searchResult.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/jp.png" id="langflag"> JP</a>
                     <a href="#" class="w3-bar-item w3-button">
                         <img src="../../images/flags/ch.png" id="langflag"> CH</a>
                 </div>
@@ -35,15 +35,14 @@
         </div>
     </div>
 
-
     <!--choice box-->
     <div class="w3-container w3-center" style="margin-top: 10px">
-        <h2>あなたの結果はここにあります!</h2>
+        <h2>Here's your result!</h2>
         <div class="w3-container w3-cell-row" style="margin: auto; width:50%; margin-top:35px;">
             <div class="w3-container w3-cell">
                 <select class="w3-select w3-border" name="option">
-                    <option value="0" disabled selected id=chooser>国を選択します</option>
-                    <option value="">Germany</option>
+                    <option value="0" disabled>Choose country</option>
+                    <option value="" selected>Germany</option>
                     <option value="2">United States</option>
                     <option value="3">Netherlands</option>
                     <option value="4">Japan</option>
@@ -52,10 +51,10 @@
             </div>
             <div class="w3-container w3-cell">
                 <select class="w3-select w3-border" name="option">
-                    <option value="0" disabled selected id=chooser>度を選択</option>
-                    <option value="">バチェラー</option>
-                    <option value="2">マスター</option>
-                    <option value="3">博士</option>
+                    <option value="0" disabled selected>Choose degree</option>
+                    <option value="" selected>Bachelor</option>
+                    <option value="2">Master</option>
+                    <option value="3">Doctorate</option>
                 </select>
             </div>
             <div class="w3-container" style="padding:0;">
@@ -68,112 +67,102 @@
 
     <!--result table-->
     <div class="w3-container w3-margin-top w3-padding-48">
-        <table class="w3-table-all w3-hoverable w3-centered" style="font-size:13px;">
+        <table class="w3-table-all w3-hoverable w3-centered" style="font-size:13px;" id="beasiswa">
             <thead>
                 <tr class="w3-light-grey">
-                    <th>奨学金の名前</th>
-                    <th>程度</th>
-                    <th>大学</th>
-                    <th>国</th>
-                    <th>期日</th>
+                    <th onclick="sortTable(0)">Scholarship Name</th>
+                    <th onclick="sortTable(1)">Degree</th>
+                    <th onclick="sortTable(2)">University</th>
+                    <th onclick="sortTable(3)">Country</th>
+                    <th onclick="sortTable(4)">Due Date</th>
                 </tr>
             </thead>
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABA Scholarship for Computer Science</a>
                 </td>
-                <td>バチェラー</td>
+                <td>Bachelor</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        BCDコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABB Scholarship for Computer Science</a>
                 </td>
-                <td>バチェラー</td>
+                <td>Bachelor</td>
                 <td>BCDA University</td>
                 <td>Germany</td>
                 <td>28-02-2018</td>
             </tr>
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABC Scholarship for Computer Science</a>
                 </td>
-                <td>バチェラー</td>
+                <td>Bachelor</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABD Scholarship for Computer Science</a>
                 </td>
-                <td>バチェラー</td>
+                <td>Bachelor</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABE Scholarship for Computer Science</a>
                 </td>
-                <td>バチェラー</td>
+                <td>Bachelor</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABF Scholarship for Computer Science</a>
                 </td>
-                <td>バチェラー</td>
+                <td>Bachelor</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABG Scholarship for Computer Science</a>
                 </td>
-                <td>バチェラー</td>
+                <td>Bachelor</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABH Scholarship for Computer Science</a>
                 </td>
-                <td>バチェラー</td>
+                <td>Bachelor</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABI Scholarship for Computer Science</a>
                 </td>
-                <td>バチェラー</td>
+                <td>Bachelor</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
             </tr>
             <tr>
                 <td>
-                    <a href="scholarshipInfoPage.html">
-                        ABCコンピュータサイエンス奨学金</a>
+                    <a href="scholarshipInfoPage.html">ABJ Scholarship for Computer Science</a>
                 </td>
-                <td>バチェラー</td>
+                <td>Bachelor</td>
                 <td>German University</td>
                 <td>Germany</td>
                 <td>31-01-2018</td>
@@ -186,8 +175,8 @@
     <div class="w3-center w3-margin-bottom">
         <div class="w3-bar">
             <a href="#" class="w3-bar-item w3-button">&laquo;</a>
-            <a href="searchResult.html" class="w3-button">1</a>
-            <a href="#" class="w3-button w3-grey">2</a>
+            <a href="#" class="w3-button w3-grey">1</a>
+            <a href="searchResult2.html" class="w3-button">2</a>
             <a href="#" class="w3-button">3</a>
             <a href="#" class="w3-button">4</a>
             <a href="#" class="w3-button">&raquo;</a>
@@ -243,7 +232,7 @@
 
     </footer>
 
-    <!--modal login jap-->
+    <!--modal login-->
     <div id="id01" class="modal">
         <form class="modal-content animate" action="/action_page.php">
             <div class="container">
@@ -253,33 +242,33 @@
                     <div class="imgcontainer">
 
                         <center>
-                            <h1>ログイン</h1>
+                            <h1>Login</h1>
                         </center>
                     </div>
 
                     <div class="container">
 
                         <label>
-                            <b>ユーザー名</b>
+                            <b>Username</b>
                         </label>
                         <input type="text" placeholder="Enter Username" name="uname" required>
 
                         <label>
-                            <b>パスワード</b>
+                            <b>Password</b>
                         </label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
 
                         <br>
-                        <input type="checkbox" checked="checked"> 私を覚えてますか
+                        <input type="checkbox" checked="checked"> Remember me
                         <br>
                         <br>
-                        <a href="#">パスワードをお忘れですか？</a>
+                        <a href="#">Forgot password?</a>
                         <br>
                         <br>
                         <span class="psw">
 
                         </span>
-                        <a class="w3-button w3-border" href="userProfilePage.html"> ログイン </a>
+                        <a class="w3-button w3-border" href="userProfilePage.html"> Sign In </a>
                     </div>
                 </form>
             </div>
@@ -331,6 +320,8 @@
             }
         }
     </script>
+
+
 </body>
 
 </html>
