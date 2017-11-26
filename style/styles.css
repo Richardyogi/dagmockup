@@ -243,3 +243,11 @@ span.psw {
     min-height:500px;
     background-image: url("../images/thought-catalog-214785.jpg")
 }
+
+.forgotpassword{
+    min-height: 400px;
+}
+
+.confirmationPage{
+    min-height: 500px;
+}
