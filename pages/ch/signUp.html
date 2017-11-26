@@ -19,7 +19,7 @@
         </a>
         <div style="padding-top: 3px">
             <button class="w3-bar-item w3-right w3-button " onclick="document.getElementById('id01').style.display='block'">
-                <i class="fa fa-user-o"></i> Login </button>
+                <i class="fa fa-user-o"></i> 登录 </button>
             <!--langdrop ch-->
             <div class="w3-dropdown-hover w3-right">
                 <button class="w3-button">
@@ -157,35 +157,43 @@
 
     <!--modal login ch-->
     <div id="id01" class="modal">
-
-        <form class="modal-content" method='post' action="#">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                <center>
-                    <h1>登录</h1>
-                </center>
-            </div>
-
+        <form class="modal-content animate" action="/action_page.php">
             <div class="container">
-                <label>
-                    <b>用户名</b>
-                </label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-right">&times;</span>
 
-                <label>
-                    <b>密码</b>
-                </label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                <input type="checkbox" checked="checked"> 记住我
-                <br>
-                <a href="userProfilePage.html" class="w3-button w3-border w3-gray"> 签到 </a>
-                <span class="psw">
-                    <a href="forgotPassword.html">忘记密码？</a>
-                </span>
-            </div>
+                <form class="modal-content" method='post' action="#">
+                    <div class="imgcontainer">
 
-            <div class="container" style="background-color:#f1f1f1">
+                        <center>
+                            <h1>登录</h1>
+                        </center>
+                    </div>
 
+                    <div class="container">
+
+                        <label>
+                            <b>用户名</b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label>
+                            <b>密码</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <br>
+                        <input type="checkbox" checked="checked"> 记住我
+                        <br>
+                        <br>
+                        <a href="forgotPassword.html">忘记密码 ？</a>
+                        <br>
+                        <br>
+                        <span class="psw">
+
+                        </span>
+                        <a class="w3-button w3-border" href="userProfilePage.html"> 签到 </a>
+                    </div>
+                </form>
             </div>
         </form>
     </div>
